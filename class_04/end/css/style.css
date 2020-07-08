@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
+
+
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* same as avobe */
+    font: 16px normal Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin: 0
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    /* padding: 40px 20px;
+    padding: 30px 10px 20px 40px; */
+    padding: 20px;
+    margin: 20px 10px;
+    border: 3px solid red;
+    /* border-right-width: 10px;
+    border-right-style: solid;
+    border-right-color: green; */
+
+}
+
+.box-1 h1 {
+    font-family: 'Fondamento';
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+}
