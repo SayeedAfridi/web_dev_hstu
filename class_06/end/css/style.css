@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/* psedo class and psedu element */
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.main-content {
+  padding-left: 270px;
+  background-color: green;
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.3);
+}
+
+.section {
+  background-color: #f2f2fc;
+  min-height: 100vh;
+  display: block;
+}
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.aside {
+  width: 270px;
+  background-color: #fdf9ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  border-right: 1px solid #e8dfec;
+  padding: 30px;
+}
+
+.aside .logo {
+  padding: 30px 0;
+}
+
+.aside .logo a {
+  font-size: 40px;
+  color: #302e4d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  line-height: 50px;
+}
+.aside .logo a::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ec1839;
+  border-left: 4px solid #ec1839;
+}
+
+.aside .logo a::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #ec1839;
+  border-right: 4px solid #ec1839;
+}
+
+.aside .nav {
+  margin: 80px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.aside .nav li {
+  display: block;
+}
+
+.aside .nav li a {
+  font-weight: 600;
+  color: #302e4d;
+  text-decoration: none;
+  line-height: 45px;
+  display: block;
+  border-bottom: 1px solid #e8dfec;
+  transition: all 0.3s ease;
+}
+
+.aside .nav li a .fa {
+  margin-right: 5px;
+}
+
+.aside .nav li a:not(.active):hover {
+  padding-left: 5px;
+}
+
+.aside .nav li a.active,
+.aside .nav li a:hover {
+  color: #ec1839;
+}
+
+.aside .copyright-text {
+  font-size: 13px;
+  color: #7d7d7d;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+}
+
+.home .intro {
+  text-align: center;
+}
+
+.home .intro img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 8px solid #fff;
+}
+
+.home .intro h1 {
+  font-size: 30px;
+  color: #302e4d;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin: 20px 0 5px;
+}
+
+.home .intro p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 22px;
+  color: #504e70;
+}
+
+.home .intro .social-link {
+  margin-top: 25px;
+}
+
+.home .intro .social-link a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ec1839;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+}
+
+.home .intro .social-link a:hover {
+  transform: scale(1.1);
+}
