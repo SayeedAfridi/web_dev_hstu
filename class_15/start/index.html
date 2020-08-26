@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="cart-form" class="form">
+        <h3 style="text-align: center; margin: 20px 0px">Your Cart</h3>
+        <div class="row">
+          <div class="col col-lg-4 col-md-2">
+            <div class="card">
+              <img
+                src="./images/bball_sneakers.jpeg"
+                class="card-img-top"
+                alt="sneakers"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Basket Ball Sneakers</h5>
+                <p>run faster, jump higher</p>
+                <p>Price: &#2547;<span id="sneaker-price">2000</span></p>
+                <div class="form-group">
+                  <label for="sneaker">Desired Quantity</label>
+                  <input
+                    min="0"
+                    max="10"
+                    type="number"
+                    class="form-control"
+                    id="sneaker-qt"
+                    placeholder="0"
+                  />
+                  <small id="sneakerHelp" class="form-text text-muted"
+                    >How many pairs do you want?</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-2">
+            <div class="card">
+              <img
+                src="./images/jersy.jpeg"
+                height="231px"
+                class="card-img-top"
+                alt="jersy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Basket Ball Jersy</h5>
+                <p>Sweat harder, wick better.</p>
+                <p>Price: &#2547;<span id="jersy-price">3000</span></p>
+                <div class="form-group">
+                  <label for="jersy">Desired Quantity</label>
+                  <input
+                    min="0"
+                    max="10"
+                    type="number"
+                    class="form-control"
+                    id="jersy-qt"
+                    name="jersy-qt"
+                    placeholder="0"
+                  />
+                  <small id="jersy-help" class="form-text text-muted"
+                    >How many pairs do you want?</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-2">
+            <div class="card">
+              <img
+                src="./images/bball.jpg"
+                class="card-img-top"
+                alt="sneakers"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Basket Ball</h5>
+                <p>light weight, full lather</p>
+                <p>Price: &#2547;<span id="bball-price">2000</span></p>
+                <div class="form-group">
+                  <label for="bball-qt">Desired Quantity</label>
+                  <input
+                    min="0"
+                    max="10"
+                    type="number"
+                    class="form-control"
+                    id="bball-qt"
+                    name="bbal-qt"
+                    placeholder="0"
+                  />
+                  <small id="bball-help" class="form-text text-muted"
+                    >How many do you want</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row wnd Here-->
+        <div style="margin: 10px"></div>
+        <div class="row">
+          <div class="col col-lg-4 col-md-2">
+            <div class="form-group">
+              <label for="shipping">Select Shipping</label>
+              <select class="form-control" id="shipping">
+                <option value="rn">Rangpur (charge: 1.6%)</option>
+                <option value="dk">Dhaka</option>
+                <option value="ct">Chittagong</option>
+                <option value="sy">Shylet (charge 1.2%)</option>
+              </select>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="method"
+                id="qurier"
+                value="qurier"
+                checked
+              />
+              <label class="form-check-label" for="qurier">
+                Qurier (60 Taka)
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="method"
+                id="pickup"
+                value="pickup"
+              />
+              <label class="form-check-label" for="pickup">
+                Person Pickup
+              </label>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-2" id="total-box">
+            Total cost will be here
+          </div>
+          <div class="col col-lg-4 col-md-2">
+            <button type="submit" id="total-btn" class="btn btn-primary">
+              Estimate Total
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
