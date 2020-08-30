@@ -1,0 +1,9 @@
+#total-box {
+  border: 1px solid grey;
+  color: grey;
+}
+
+.total-text {
+  margin: 10px 0;
+  color: green;
+}
