@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url(./fonts/digital-7.ttf);
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(
+      to left,
+      rgba(156, 204, 227, 0.3),
+      rgba(70, 104, 214, 0.3)
+    ),
+    url(./back.jpg);
+
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  background-image: linear-gradient(
+      to left,
+      rgba(156, 204, 227, 0.3),
+      rgba(70, 104, 214, 0.3)
+    ),
+    url(./back.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 60px solid #fff;
+  border-radius: 50px;
+}
+
+.clock-text {
+  font-size: 104px;
+  font-family: 'Digital-7';
+  color: #2f2f2f;
+}
+
+.date-text {
+  font-size: 24px;
+  color: #3d3d3d;
+  font-family: serif;
+  text-align: right;
+}
