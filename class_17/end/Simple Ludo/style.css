@@ -160,3 +160,19 @@ i {
   font-weight: 300;
   color: #eb4d4d;
 }
+
+.win-value {
+  width: 80px;
+  padding: 8px 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 525px;
+  border-radius: 0;
+  border: 1px solid #d8d8d8;
+}
+
+.win-value:focus,
+.win-value:active {
+  border: 1px solid #eb4d4d;
+}

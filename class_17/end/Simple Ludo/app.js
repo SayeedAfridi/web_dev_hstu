@@ -57,11 +57,12 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
   if (isGamePlaying) {
     // add round score to global score
     scores[activePlayer] += roundScore; //scores[activePlayer] = scores[activePlayer] + roundScore;
+    var winningValue = +document.getElementById('win-value').value;
     //update the ui
     document.getElementById('score-' + activePlayer).textContent =
       scores[activePlayer];
     //check if wins
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= winningValue) {
       //some task
       isGamePlaying = false;
       document.getElementById('name-' + activePlayer).textContent = 'winner!';
