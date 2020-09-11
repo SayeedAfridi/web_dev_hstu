@@ -57,7 +57,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
   if (isGamePlaying) {
     // add round score to global score
     scores[activePlayer] += roundScore; //scores[activePlayer] = scores[activePlayer] + roundScore;
-    var winningValue = +document.getElementById('win-value').value;
+    var winningValue = +document.getElementById('win-value').value || 100;
     //update the ui
     document.getElementById('score-' + activePlayer).textContent =
       scores[activePlayer];
