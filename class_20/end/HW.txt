@@ -1,0 +1,16 @@
+1. Build a function constructor  called Questions to describe a question. A question should include:
+a) question itself
+b) the answers from which the player can choose the correct one ( choose an adequate data structure here, array, object, etc)
+c) correct answer (hint: number will be easier)
+
+2. create a couple of questions using constructor
+
+3. store them all inside an array
+
+4. Select one random questions and log it on the console, together with the possible answer(each question should have a number) (hint: write a method for the question objects for this)
+
+5. use the prompt function to ask the user for correct answer. The user should input the number of the correct answer.
+
+6. check if the answer is correct and print to the console whether the answer is correct or not. (hint: write another method for this)
+
+7. suppose this code would be a plugin for other programmers to use in their code. so make sure that all your code is private and doesn't interfere with the other programmers code. (hint: IIFE)
