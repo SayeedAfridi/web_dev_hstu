@@ -1,0 +1,16 @@
+01. Add Event Listener
+02. Get input from UI
+03. Show rows
+04. Add data to structures
+05. calculate the budget
+06. Update UI
+
+Module
+
+UI Module                       Data Module
+Get input from UI           Add data to structures
+Show rows                   calculate the budget
+Update UI
+
+        Controller Module
+        Add Event Listener
